@@ -1,0 +1,93 @@
+.main-cont-abt {
+    margin-block-start: 20px;
+}
+
+
+.bck-img {
+    background: url('/src/assets/abt-img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: top;
+    background-position-y: top;
+    width: 96vw;
+    height: 60vh;
+    justify-self: center;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 58px;
+}
+
+.about-us-header {
+    display: inline-flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:  0.05px 0.05px 4px 0.001px  rgb(227, 227, 235);
+    margin-block-end: 20px;
+    justify-self: start;
+    position: absolute;
+    top: 40px;
+    left: 24px;
+    
+    
+}
+
+.bullet {
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(100deg, rgb(6, 1, 78) 0%, rgb(61, 8, 167) 100%);
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .bullet {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .about-us-header h5 {
+        font-size: 1rem;
+    }
+}
+
+
+.abt-h, .abt-h-end {
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .abt-p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-inline-start: 20px;
+  }
+  
+  span {
+    background: linear-gradient(100deg, rgb(6, 1, 78) 0%, rgb(61, 8, 167) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    
+  }
+
+.abt-h-end {
+    justify-self: right;
+}
+
+.abt-vision {
+    width: 496px;
+    height: 297.86px;
+    justify-self: left;
+    display: flex;
+   
+}
