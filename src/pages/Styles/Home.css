@@ -1,8 +1,9 @@
-/* Hero Section Styling */
+
 .hero {
-  width: 96vw; /* Full width */
-  min-height: 100vh; /* Full height */
-  margin: 0; /* Remove any margins */
+  width: 96vw; 
+  max-width: 96vw;
+  min-height: 100vh; 
+  margin: 0; 
   box-shadow: none;
   background: black;
   display: flex;
@@ -12,9 +13,18 @@
   justify-self: center;
   position: relative;
  border-radius: 20px ;
-
 }
 
+.hero-h {
+  line-height: px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    min-width: 96vw;
+    max-width: 96vw;
+  }
+}
 
 
 
@@ -29,7 +39,7 @@
  
 }
 
-/* Hero Background Effect */
+
 .hero::before {
   content: "";
   position: absolute;
@@ -54,14 +64,10 @@
 }
 
 /* Hero Image */
-
-
 .row {
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
-
  .row{
   display: flex;
   align-items: center;
@@ -69,15 +75,12 @@
   padding: 0;
 }
 
-
 h1 {
   font-weight: bold;
   font-size: 40px;
-  line-height: 60px;
+  line-height: 72px;
   text-align: left;
-  margin-inline-start: 100px;
-
-  
+  margin-inline-start: 100px;  
 }
 
 .hero-p {
@@ -86,11 +89,27 @@ h1 {
   line-height: 32px;
   text-align: left;
   margin-inline-start: 100px;
-  
  
 }
 
-.get-started-btn {
+.hero-content, .cta-bx2 {
+  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+  height: 100%;
+  padding-left: 20px; 
+}
+@media screen and (max-width: 768px) {
+  .hero-content, .cta-bx2 {
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+.get-started-btn, .cta-btn {
   background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(260deg, rgba(15, 32, 78, 0.8) 0%, rgb(58, 129, 240) 100%);
     color: white; 
@@ -98,19 +117,21 @@ h1 {
     font-weight: 600;
     border: none;
     border-radius: 8px;
+    align-self: flex-start;
     font-size: 16px;
     margin-block-start: 20px;
-    margin-inline-start: -560px;
-    cursor: pointer;
+    margin-inline-start: 100px;  
+     cursor: pointer;
     transition: all 0.3s ease-in-out;
    
 }
-
+.cta-btn {
+  margin-inline-start: 0px;
+}
 
 .about {
   height: 40vh;
   background: transparent;
-  
   justify-self: center;
   align-items: center;
   display: flex;
@@ -132,7 +153,7 @@ h1 {
 }
 
 .about-spa, .wca-text, .cta-spa {
-  background: linear-gradient(100deg, rgb(6, 1, 78) 0%, rgb(61, 8, 167) 100%);
+  background: linear-gradient(260deg, rgba(15, 32, 78, 0.8) 0%, rgb(58, 129, 240) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -142,6 +163,7 @@ h1 {
 
 .wca-text, .cta-h {
   font-weight: bold;
+  text-align: center;
 }
 
 
@@ -311,14 +333,8 @@ text-align: left;
       line-height: 32px;
     }
 
-    .cta-bx2 {
-      position: relative;
-    }
-    .cta-btn {
-     position: absolute;
-     left: 572px;
     
-    }
+    
     
  /* Mobile Styles: Adjust layout for small screens (phones) */
 @media screen and (max-width: 768px) {
@@ -338,11 +354,16 @@ text-align: left;
   }
 
   h1 {
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 72px;
     text-align: center;
     margin: 0 auto;
+    font-weight: 600;
     max-width: 90%;
+  }
+
+  h3, .card-text, .about-p {
+    text-align: center;
   }
 
   .hero-p {
@@ -352,7 +373,9 @@ text-align: left;
     max-width: 90%;
     margin: 10px auto;
   }
-
+p {
+  text-align: center;
+}
   .get-started-btn {
     margin: 20px auto 0;
     width: 90%;
@@ -437,11 +460,13 @@ text-align: left;
 
   .why-title {
     font-size: 1.3rem;
+    text-align: center;
   }
 
   .why-text {
     font-size: 1rem;
     line-height: 28px;
+    text-align: center;
   }
 }
 

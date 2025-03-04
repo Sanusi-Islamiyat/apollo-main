@@ -26,7 +26,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          apollo<span>Trace.</span>
+          apollo<span className="apl-span">Trace.</span>
         </Link>
         <button className="navbar-toggler" type="button" onClick={toggleMenu}>
           <span className="navbar-toggler-icon"></span>

@@ -138,9 +138,6 @@ function Home() {
   </Container>
 </section>
 
-
-
-
       
       {/* Call-to-Action Section */}
 <section className="cta text-#212529" data-aos="fade-up">

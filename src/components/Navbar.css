@@ -17,8 +17,8 @@
    font-weight: 900;
    font-size: 24px;
   }
-  span {
-    background: linear-gradient(100deg, rgb(6, 1, 78) 0%, rgb(61, 8, 167) 100%);
+  .apl-span {
+    background: linear-gradient(260deg, rgba(15, 32, 78, 0.8) 0%, rgb(58, 129, 240) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,7 +31,7 @@
    font-size: 16px;
   }
 .nav-link:hover {
-  background: linear-gradient(100deg, rgb(6, 1, 78) 0%, rgb(61, 8, 167) 100%);
+  background: linear-gradient(260deg, rgba(15, 32, 78, 0.8) 0%, rgb(58, 129, 240) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
